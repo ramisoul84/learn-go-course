@@ -1,0 +1,20 @@
+name: Go
+
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      - name: Vet, build and test every episode
+        run: |
+          for mod in $(find . -name go.mod -not -path "./.git/*"); do
+            dir=$(dirname "$mod")
+            echo "::group::$dir"
+            (cd "$dir" && gofmt -l . | tee /dev/stderr | (! read) && go vet ./... && go build ./... && go test ./...)
+            echo "::endgroup::"
+          done

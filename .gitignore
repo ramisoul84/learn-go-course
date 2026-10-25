@@ -1,0 +1,10 @@
+# Binaries from go build
+*.exe
+ep01-hello-world/hello
+*.test
+*.out
+*.db
+
+.DS_Store
+.idea/
+.vscode/
