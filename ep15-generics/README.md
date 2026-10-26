@@ -2,7 +2,7 @@
 
 Module 3 · Writing idiomatic Go
 
-▶️ Watch on YouTube: [Learn Go — full course playlist](PLAYLIST_LINK)
+▶️ Watch on YouTube: [Learn Go — full course playlist](https://www.youtube.com/playlist?list=PLPDHYEltiPAI)
 
 ## What you'll learn
 

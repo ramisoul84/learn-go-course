@@ -3,14 +3,14 @@
 Code for the **Learn Go** YouTube course: 24 short, hands-on episodes that take you from
 installing Go to building and deploying a REST API with a database and Docker.
 
-▶️ **Watch the course:** [YouTube playlist](PLAYLIST_LINK)
+▶️ **Watch the course:** [YouTube playlist](https://www.youtube.com/playlist?list=PLPDHYEltiPAI)
 
 ## How to use this repo
 
 Each episode has its own folder and its own Go module. To run an episode's code:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/learn-go-course.git
+git clone https://github.com/ramisoul84/learn-go-course.git
 cd learn-go-course/ep01-hello-world
 go run .
 ```
