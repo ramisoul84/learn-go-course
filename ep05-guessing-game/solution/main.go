@@ -34,7 +34,7 @@ func chooseLevel() (int, int) {
 		case "hard":
 			return 1000, 10
 		default:
-			fmt.Println("Please type easy, medium or hard.")
+			fmt.Println("Type easy, medium or hard.")
 		}
 	}
 }
@@ -62,5 +62,5 @@ func main() {
 		}
 		tries++
 	}
-	fmt.Println("Out of tries! The number was", secret)
+	fmt.Println("Out of tries! It was", secret)
 }
