@@ -47,6 +47,6 @@ ep13-packages-modules/
 
 ## Exercise
 
-Move the to-do logic from episode 10 into its own `todo` package and keep `main.go` under 30 lines.
+Move the to-do logic from episode 10 into its own `todo` package and keep `main` short.
 
 Solution: [`solution/todo/todo.go`](./solution/todo/todo.go) and [`solution/main.go`](./solution/main.go).
