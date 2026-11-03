@@ -17,10 +17,10 @@ var (
 func ParseAge(s string) (int, error) {
 	age, err := strconv.Atoi(s)
 	if err != nil {
-		return 0, fmt.Errorf("parse age %q: %w", s, ErrNotNumber)
+		return 0, fmt.Errorf("age %q: %w", s, ErrNotNumber)
 	}
 	if age < 0 || age > 150 {
-		return 0, fmt.Errorf("parse age %d: %w", age, ErrOutOfRange)
+		return 0, fmt.Errorf("age %d: %w", age, ErrOutOfRange)
 	}
 	return age, nil
 }
