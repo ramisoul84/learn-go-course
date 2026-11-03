@@ -8,3 +8,5 @@ ep01-hello-world/hello
 .DS_Store
 .idea/
 .vscode/
+tasks.json
+todo
