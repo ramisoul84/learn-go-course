@@ -6,9 +6,9 @@ import (
 )
 
 // fetch pretends to download something, then sends the result down the channel.
-func fetch(name string, delay time.Duration, results chan string) {
-	time.Sleep(delay)
-	results <- name + " finished"
+func fetch(name string, d time.Duration, out chan string) {
+	time.Sleep(d)
+	out <- name + " finished"
 }
 
 // generate only sends, so its parameter is a send-only channel.
