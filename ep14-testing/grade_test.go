@@ -27,7 +27,7 @@ func TestLetterTable(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			got := Letter(tt.score)
 			if got != tt.want {
-				t.Errorf("Letter(%d) = %q, want %q", tt.score, got, tt.want)
+				t.Errorf("got %q, want %q", got, tt.want)
 			}
 		})
 	}
