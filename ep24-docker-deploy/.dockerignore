@@ -1,0 +1,4 @@
+*.db
+README.md
+Dockerfile
+.dockerignore

@@ -58,8 +58,8 @@ func (s *SQLiteStore) All() ([]Todo, error) {
 // Filter returns the to-dos that are done, or not done.
 func (s *SQLiteStore) Filter(done bool) ([]Todo, error) {
 	rows, err := s.db.Query(
-		"SELECT id, title, done FROM todos WHERE done = ? ORDER BY id",
-		done)
+		"SELECT id, title, done FROM todos "+
+			"WHERE done = ? ORDER BY id", done)
 	if err != nil {
 		return nil, err
 	}
