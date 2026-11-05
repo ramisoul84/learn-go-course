@@ -1,0 +1,8 @@
+go.dev
+github.com
+example.com
+pkg.go.dev
+www.rust-lang.org
+www.python.org
+nodejs.org
+no-such-site.invalid
